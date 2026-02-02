@@ -46,7 +46,6 @@ function updateIndexes() {
             document.getElementById("pageNumber" + i).classList.remove("active");
         }
         var currentPage = document.getElementById("pageNumber" + pageNum);
-        console.log(currentPage);
         currentPage.classList.add("active");
     });
 }
@@ -67,7 +66,7 @@ function updateUpcomingEvents(containerID) {
     }
 }
 
-function updatePastEvents(containerID) {
+function updatePastEvents(containerID, imageClass) {
     const hash = location.hash.slice(1);
     const pageNum = parseInt(hash) || 1;
 
@@ -77,12 +76,20 @@ function updatePastEvents(containerID) {
     fetch('data/pastEvents.json')
     .then(res => res.json())
     .then(events => {
-        const container = document.getElementById(containerID);
+        const container = document.getElementById(containerID, imageClass);
         let html = ``;
         events.slice(firstIndex,lastIndex).forEach(event => {
             html += `
-            <div class="eventCard">
-                <img class="eventImg" src="${event.image}" alt="${event.title}">
+            <div class="eventCard"> `;
+            switch(imageClass){
+                case "eventImgMobile":
+                    html += `<img class="eventImgMobile" src="${event.image}" alt="${event.title}">`;
+                    break;
+                case "eventImg":
+                    html += `<img class="eventImg" src="${event.image}" alt="${event.title}">`;
+                    break;
+            }
+            html += `
                 <div class="eventInfo">
                     <div class="eventDetails">
                         <p class="txParagraph1 txWhite">${event.title}</p>
