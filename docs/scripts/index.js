@@ -77,3 +77,16 @@ function hamLinks(){
         document.getElementById('hamburgerBackdrop').classList.add('show');
     }
 }
+
+function getLabel(){
+    fetch('data/labelMessages.json')
+    .then(res => res.json())
+    .then(labels => {
+        const length = Object.keys(labels).length;
+        const index = Math.floor(Math.random() * length);
+        // console.log(index)
+        // console.log(labels[index])
+        const container = document.getElementById("siteLabel");
+        container.innerHTML = `<div class="wipLabel">${labels[index]}</div>`
+    })
+}
