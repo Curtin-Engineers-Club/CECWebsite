@@ -823,7 +823,7 @@ a {
     .eventImg{
         max-width: 100%;
         min-height: min-content;
-        height: auto !important;
+        max-height: 50vh;
         aspect-ratio: 4 / 3;
     }
     .eventInfo{
