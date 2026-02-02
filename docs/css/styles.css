@@ -816,15 +816,15 @@ a {
         margin-bottom: 0px;
         width: 100%;
     }
-    .eventDetails .txParagraph2White{
+    .eventDetails .txParagraph2{
         margin-bottom: 0px;
         width: 100%;
     }
     .eventImg{
         max-width: 100%;
-        /* height: auto !important; */
+        min-height: min-content;
+        height: auto !important;
         aspect-ratio: 4 / 3;
-        object-fit: cover;
     }
     .eventInfo{
         flex: 1;
