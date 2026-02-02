@@ -845,6 +845,9 @@ a {
     #pastEventsContainerMobile {
         display: none;
     }
+    .eventDetails .txParagraph2{
+        text-align: right;
+    }
 }
 
 .pagination{

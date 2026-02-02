@@ -46,7 +46,6 @@ function updateIndexes() {
             document.getElementById("pageNumber" + i).classList.remove("active");
         }
         var currentPage = document.getElementById("pageNumber" + pageNum);
-        console.log(currentPage);
         currentPage.classList.add("active");
     });
 }
