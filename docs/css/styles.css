@@ -812,7 +812,7 @@ a {
         text-align: left;
         justify-content: start;
     }
-    .eventDetails .txParagraph1White{
+    .eventDetails .txParagraph1{
         margin-bottom: 0px;
         width: 100%;
     }
@@ -822,13 +822,14 @@ a {
     }
     .eventImg{
         max-width: 100%;
-        height: auto !important;
+        /* height: auto !important; */
         aspect-ratio: 4 / 3;
         object-fit: cover;
     }
     .eventInfo{
         flex: 1;
         padding: 0px;
+        width: 100%;
     }
 }
 @media screen and (min-width: 750px) {
