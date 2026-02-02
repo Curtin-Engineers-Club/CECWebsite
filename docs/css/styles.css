@@ -805,7 +805,6 @@ a {
     }
     .eventCard{
         flex-direction: column;
-        max-height: 480px;
     }
     .eventDetails{
         flex-direction: column;
@@ -822,7 +821,8 @@ a {
     }
     .eventImg{
         max-width: 100%;
-        aspect-ratio: 4 / 3;
+        max-height: 100%;
+        /* aspect-ratio: 4 / 3; */
     }
     .eventInfo{
         flex: 1;
