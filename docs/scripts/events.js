@@ -112,7 +112,7 @@ function fetchEvents(category) {
             return events.filter(event => event.date <= currentDate);
         }
         else if (category == "upcoming"){ 
-            return events.filter(event => event.date >= currentDate);
+            return events.filter(event => event.date >= currentDate).reverse();
         }
         return events;
     });
