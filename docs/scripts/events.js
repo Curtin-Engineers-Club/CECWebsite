@@ -1,14 +1,12 @@
 const PER_PAGE = 10;
 
-
 function updatePagination() {
     const hash = location.hash.slice(1);
 
     var prev = document.getElementById("prevPage");
     var next = document.getElementById("nextPage");
 
-    fetch('data/pastEvents.json')
-    .then(res => res.json())
+    fetchEvents("past")
     .then(events => {
         pages = Math.ceil(events.length / 10);
         let currentPage = parseInt(hash) || 1;
@@ -37,8 +35,7 @@ function updateIndexes() {
     const hash = location.hash.slice(1);
     const pageNum = parseInt(hash) || 1;
 
-    fetch('data/pastEvents.json')
-    .then(res => res.json())
+    fetchEvents("past")
     .then(events => {
         const pages = Math.ceil(events.length / 10);
 
@@ -73,23 +70,13 @@ function updatePastEvents(containerID, imageClass) {
     firstIndex = (pageNum - 1) * PER_PAGE;
     lastIndex = firstIndex + PER_PAGE;
 
-    fetch('data/pastEvents.json')
-    .then(res => res.json())
-    .then(events => {
-        const container = document.getElementById(containerID, imageClass);
-        let html = ``;
+    const container = document.getElementById(containerID);
+    let html = ``;
+    fetchEvents("past").then(events => {
         events.slice(firstIndex,lastIndex).forEach(event => {
             html += `
-            <div class="eventCard"> `;
-            switch(imageClass){
-                case "eventImgMobile":
-                    html += `<img class="eventImgMobile" src="${event.image}" alt="${event.title}">`;
-                    break;
-                case "eventImg":
-                    html += `<img class="eventImg" src="${event.image}" alt="${event.title}">`;
-                    break;
-            }
-            html += `
+            <div class="eventCard"> 
+                <img class="${imageClass}" src="${event.image}" alt="${event.title}">
                 <div class="eventInfo">
                     <div class="eventDetails">
                         <p class="txParagraph1 txWhite">${event.title}</p>
@@ -100,9 +87,12 @@ function updatePastEvents(containerID, imageClass) {
                 </div>
             </div>
             `;
-        })
+        });
         container.innerHTML = html;
-    })
+    }).catch(err => {
+        console.error('Failed to load past events:', err);
+        container.innerHTML = '';
+    });
 }
 
 function resetScroll() {
@@ -114,18 +104,16 @@ function fetchEvents(category) {
     const month = (new Date().getMonth() + 1).toString().padStart(2, "0");
     const year = new Date().getFullYear();
     const currentDate = year + "-" + month + "-" + date;
-    console.log(currentDate);
 
-    fetch('data/eventDetails.json')
+    return fetch('data/eventDetails.json')
     .then(res => res.json())
     .then(events => {
-        events.forEach(event => {
-            if(currentDate > event.date){
-                console.log("past")
-            }
-            else if (currentDate < event.date){
-                console.log("upcoming")
-            }
-        })
-    })
+        if(category == "past"){ 
+            return events.filter(event => event.date <= currentDate);
+        }
+        else if (category == "upcoming"){ 
+            return events.filter(event => event.date >= currentDate);
+        }
+        return events;
+    });
 }

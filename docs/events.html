@@ -63,8 +63,7 @@
             <!-- Landscape -->
             <div id="upcomingEventsContainerLandscape" class="eventContainer"></div>
             <script>
-                fetch('data/upcomingEvents.json')
-                .then(res => res.json())
+                fetchEvents("upcoming")
                 .then(events => {
                     const container = document.getElementById('upcomingEventsContainerLandscape');
                     if (events.length === 0) {
@@ -93,8 +92,7 @@
             <!-- Mobile -->
             <div id="upcomingEventsContainerMobile" class="eventContainer"></div>
             <script>
-                fetch('data/upcomingEvents.json')
-                .then(res => res.json())
+                fetchEvents("upcoming")
                 .then(events => {
                     const container = document.getElementById('upcomingEventsContainerMobile');
                     if (events.length === 0) {
@@ -119,6 +117,7 @@
                     }
                 })
             </script>
+            
             <script>
                 if(screen.width <= 750){
                     var containerID = "upcomingEventsContainerMobile";
@@ -134,7 +133,6 @@
             <div id="pastEventsContainerLandscape" class="eventContainer"></div>
             <script>
                 updatePastEvents('pastEventsContainerLandscape', "eventImg");
-                fetchEvents("past");
             </script>
 
             <div id="pastEventsContainerMobile" class="eventContainer"></div>
@@ -145,8 +143,7 @@
             <!-- Pagination -->
             <div id="paginationContainer" class="pagination">
                 <script>
-                    fetch('data/pastEvents.json')
-                    .then(res => res.json())
+                    fetchEvents("past")
                     .then(events => {
                         const pages = Math.ceil(events.length / 10);
                         const container = document.getElementById('paginationContainer');
@@ -168,18 +165,20 @@
 
             <script>
                 // Run when hash changes
-                var upContainerID
+                var upContainerID, paContainerID, paImageClass;
                 if(screen.width <= 750){
                     upContainerID = "upcomingEventsContainerMobile";
                     paContainerID = "pastEventsContainerMobile";
+                    paImageClass = "eventImgMobile";
                 } else {
                     upContainerID = "upcomingEventsContainerLandscape";
                     paContainerID = "pastEventsContainerLandscape";
+                    paImageClass = "eventImg";
                 }
 
                 window.addEventListener("hashchange", updateIndexes);
                 window.addEventListener("hashchange", () => updateUpcomingEvents(upContainerID));
-                window.addEventListener("hashchange", () => updatePastEvents(paContainerID));
+                window.addEventListener("hashchange", () => updatePastEvents(paContainerID, paImageClass));
                 window.addEventListener("hashchange", updatePagination);
 
                 window.addEventListener("hashchange", resetScroll);
