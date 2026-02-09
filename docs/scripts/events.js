@@ -93,7 +93,7 @@ function updatePastEvents(containerID, imageClass) {
                 <div class="eventInfo">
                     <div class="eventDetails">
                         <p class="txParagraph1 txWhite">${event.title}</p>
-                        <p class="txParagraph2 txWhite">${event.date}<br>${event.time}</p>
+                        <p class="txParagraph2 txWhite">${event.day}<br>${event.time}</p>
                     </div>
                     <p class="txParagraph3 txWhite" style="max-width: none;">${event.description}</p>
                     <a href="${event.link}" class="yellowButton" style="padding: 6px 8px;" target="_blank" rel="noopener noreferrer">Find Out More!</a>
@@ -107,4 +107,25 @@ function updatePastEvents(containerID, imageClass) {
 
 function resetScroll() {
     window.scrollTo(0, 0);
+}
+
+function fetchEvents(category) {
+    const date = new Date().getDate().toString().padStart(2, "0");
+    const month = (new Date().getMonth() + 1).toString().padStart(2, "0");
+    const year = new Date().getFullYear();
+    const currentDate = year + "-" + month + "-" + date;
+    console.log(currentDate);
+
+    fetch('data/eventDetails.json')
+    .then(res => res.json())
+    .then(events => {
+        events.forEach(event => {
+            if(currentDate > event.date){
+                console.log("past")
+            }
+            else if (currentDate < event.date){
+                console.log("upcoming")
+            }
+        })
+    })
 }

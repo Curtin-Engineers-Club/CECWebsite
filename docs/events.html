@@ -78,7 +78,7 @@
                                 <div class="eventInfo">
                                     <div class="eventDetails">
                                         <p class="txParagraph1 txWhite">${event.title}</p>
-                                        <p class="txParagraph2 txWhite">${event.date}<br>${event.time}</p>
+                                        <p class="txParagraph2 txWhite">${event.day}<br>${event.time}</p>
                                     </div>
                                     <p class="txParagraph3 txWhite" style="max-width: none;">${event.description}</p>
                                     <a href="${event.link}" class="yellowButton" style="padding: 6px 8px;" target="_blank" rel="noopener noreferrer">Find Out More!</a>
@@ -108,7 +108,7 @@
                                 <div class="eventInfo">
                                     <div class="eventDetails">
                                         <p class="txParagraph1 txWhite">${event.title}</p>
-                                        <p class="txParagraph2 txWhite">${event.date}<br>${event.time}</p>
+                                        <p class="txParagraph2 txWhite">${event.day}<br>${event.time}</p>
                                     </div>
                                     <p class="txParagraph3 txWhite" style="max-width: none;">${event.description}</p>
                                     <a href="${event.link}" class="yellowButton" style="padding: 6px 8px;" target="_blank" rel="noopener noreferrer">Find Out More!</a>
@@ -134,6 +134,7 @@
             <div id="pastEventsContainerLandscape" class="eventContainer"></div>
             <script>
                 updatePastEvents('pastEventsContainerLandscape', "eventImg");
+                fetchEvents("past");
             </script>
 
             <div id="pastEventsContainerMobile" class="eventContainer"></div>
