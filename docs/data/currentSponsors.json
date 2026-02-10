@@ -2,7 +2,7 @@
     {
         "name": "Stantec",
         "logo": "assets/sponsors/StantecBlue.svg",
-        "level": "other"
+        "level": "silver"
     },
     {
         "name": "civmec",
@@ -23,5 +23,10 @@
         "name": "SLB",
         "logo": "assets/sponsors/SLBBlue.svg",
         "level": "silver"
+    },
+    {
+        "name": "Optiver",
+        "logo": "assets/sponsors/OptiverBlue.svg",
+        "level": "other"
     }
 ]
