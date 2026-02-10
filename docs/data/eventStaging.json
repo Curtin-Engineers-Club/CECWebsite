@@ -1,5 +1,5 @@
 [
-    {"Temporary": "Temporary storage for event details, if whole event is not ready to be put into eventDetails.json"},
+    {"Staging": "Temporary storage for event details, if whole event is not ready to be put into eventDetails.json"},
     
     {
         "title": "BBQ On The Lawn 1 - (BOTL)",
