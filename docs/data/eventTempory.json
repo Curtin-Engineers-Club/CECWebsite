@@ -1,0 +1,13 @@
+[
+    {"Temporary": "Temporary storage for event details, if whole event is not ready to be put into eventDetails.json"},
+    
+    {
+        "title": "BBQ On The Lawn 1 - (BOTL)",
+        "day": "27th of February",
+        "time": "2pm-6pm",
+        "description": "The sun is out and so should you be, It is time again for BBQ on The Lawn in 2026. Free snags, 50c Soft Drinks, Beers, Ciders, Premix Cans and Free Entry for members",
+        "image": "assets/images/BOTL1_2025.png",
+        "link": "https://instagram.com/curtinengineersclub",
+        "date": "2026-02-27"
+    }
+]
