@@ -787,6 +787,12 @@ a {
     gap: 32px;
 }
 
+.linkTx{
+    color: var(--Brand-blue-primary);
+    font-family: Poppins;
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 750px) {
     #upcomingEventsContainerLandscape {
         display: none;
@@ -859,6 +865,7 @@ a {
     font-family: Poppins;
     font-size: 20px;
     margin: 32px;
+    
 }
 
 .pagination a{
