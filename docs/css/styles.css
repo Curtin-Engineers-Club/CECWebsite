@@ -433,7 +433,7 @@ a {
 .txParagraph3 {
     color: var(--Text-Primary);
     font-family: Poppins;
-    font-size: 12px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -787,10 +787,9 @@ a {
     gap: 32px;
 }
 
-.linkTx{
+.txLink{
     color: var(--Brand-blue-primary);
     font-family: Poppins;
-    text-decoration: underline;
 }
 
 @media screen and (max-width: 750px) {
