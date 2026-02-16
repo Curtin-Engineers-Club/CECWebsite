@@ -1,62 +1,62 @@
 [
     {
         "name": "Stantec",
-        "logo": "assets/sponsors/StantecBlue.svg",
+        "logo": "assets/sponsors/stantec.svg",
         "level": "silver"
     },
     {
         "name": "Pacific Energy",
-        "logo": "assets/sponsors/PacificEBlue.svg",
+        "logo": "assets/sponsors/PacificE.svg",
         "level": "gold"
     },
     {
         "name": "civmec",
-        "logo": "assets/sponsors/CivmecBlue.svg",
+        "logo": "assets/sponsors/Civmec.svg",
         "level": "silver"
     },
     {
         "name": "Partnets In Performance",
-        "logo": "assets/sponsors/PIPBlue.svg",
+        "logo": "assets/sponsors/PIP.svg",
         "level": "silver"
     },
     {
         "name": "Fortescue",
-        "logo": "assets/sponsors/FortescueBlue.svg",
+        "logo": "assets/sponsors/Fortescue.svg",
         "level": "silver"
     },
     {
         "name": "Partum",
-        "logo": "assets/sponsors/PartumBlue.svg",
+        "logo": "assets/sponsors/Partum.svg",
         "level": "silver"
     },
     {
         "name": "Deloitte",
-        "logo": "assets/sponsors/DeloitteBlue.svg",
+        "logo": "assets/sponsors/Deloitte.svg",
         "level": "other"
     },
     {
         "name": "PROK",
-        "logo": "assets/sponsors/ProkBlue.svg",
+        "logo": "assets/sponsors/PROK.svg",
         "level": "silver"
     },
     {
         "name": "GHD",
-        "logo": "assets/sponsors/GHDBlue.svg",
+        "logo": "assets/sponsors/GHD.svg",
         "level": "other"
     },
     {
         "name": "SLB",
-        "logo": "assets/sponsors/SLBBlue.svg",
+        "logo": "assets/sponsors/SLB.svg",
         "level": "silver"
     },
     {
         "name": "WGA",
-        "logo": "assets/sponsors/WGABlue.svg",
+        "logo": "assets/sponsors/WGA.svg",
         "level": "gold"
     },
     {
         "name": "Yarra",
-        "logo": "assets/sponsors/YarraBlue.svg",
+        "logo": "assets/sponsors/Yara.svg",
         "level": "silver"
     }
 ]

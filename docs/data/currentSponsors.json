@@ -1,27 +1,27 @@
 [
     {
         "name": "Stantec",
-        "logo": "assets/sponsors/StantecBlue.svg",
+        "logo": "assets/sponsors/Stantec.svg",
         "level": "other"
     },
     {
         "name": "civmec",
-        "logo": "assets/sponsors/CivmecBlue.svg",
+        "logo": "assets/sponsors/Civmec.svg",
         "level": "gold"
     },
     {
         "name": "Partnets In Performance",
-        "logo": "assets/sponsors/PIPBlue.svg",
+        "logo": "assets/sponsors/PIP.svg",
         "level": "silver"
     },
     {
         "name": "Partum",
-        "logo": "assets/sponsors/PartumBlue.svg",
+        "logo": "assets/sponsors/Partum.svg",
         "level": "gold"
     },
     {
         "name": "SLB",
-        "logo": "assets/sponsors/SLBBlue.svg",
+        "logo": "assets/sponsors/SLB.svg",
         "level": "silver"
     }
 ]
