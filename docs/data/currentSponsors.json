@@ -28,5 +28,10 @@
         "name": "Optiver",
         "logo": "assets/sponsors/OptiverBlue.svg",
         "level": "other"
+    },
+    {
+        "name": "PROK",
+        "logo": "assets/sponsors/PROKBlue.svg",
+        "level": "other"
     }
 ]
