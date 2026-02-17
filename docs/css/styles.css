@@ -433,7 +433,7 @@ a {
 .txParagraph3 {
     color: var(--Text-Primary);
     font-family: Poppins;
-    font-size: 12px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -787,6 +787,11 @@ a {
     gap: 32px;
 }
 
+.txLink{
+    color: var(--Brand-blue-primary);
+    font-family: Poppins;
+}
+
 @media screen and (max-width: 750px) {
     #upcomingEventsContainerLandscape {
         display: none;
@@ -859,6 +864,7 @@ a {
     font-family: Poppins;
     font-size: 20px;
     margin: 32px;
+    
 }
 
 .pagination a{
