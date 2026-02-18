@@ -1,5 +1,15 @@
 [
     {
+        "title": "Graduate Sundowner",
+        "day": "5th of March",
+        "time": "6pm-9pm",
+        "description": "Join us for an exclusive evening designed for engineering students and upcoming graduates looking to launch their careers.<br>This Graduate Engineers Sundowner brings together ambitious future engineers and leading companies offering graduate opportunities.",
+        "image": "assets/images/GradSundowner_2026.png",
+        "link": "https://cec.cguild.club/public/schedule/events/81708-graduate-sundowner",
+        "date": "2026-03-05"
+    },
+    
+    {
         "title": "BBQ On The Lawn 1 - (BOTL)",
         "day": "27th of February",
         "time": "2pm-6pm",
