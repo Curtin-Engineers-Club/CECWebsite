@@ -58,5 +58,10 @@
         "name": "Yarra",
         "logo": "assets/sponsors/YarraBlue.svg",
         "level": "silver"
+    },
+    {
+        "name": "EA",
+        "logo": "assets/sponsors/EABlue.svg",
+        "level": "other"
     }
 ]
