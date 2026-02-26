@@ -3,7 +3,7 @@
 /* Media Queries */
 
 /* Mobile */
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 950px) {
     #hamLinks {
         display: none;
     }
@@ -24,7 +24,7 @@
     }
 }
 /* Desktop */
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 950px) {
     #gearWOUT {
         display: flex;
     }
@@ -38,6 +38,7 @@
         display: flex;
     }
 }
+
 
 /* Global styles */
 * {
@@ -130,7 +131,7 @@ a {
     gap: 48px;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 950px) {
     .main{
         gap: 24px;
     }
@@ -212,7 +213,7 @@ a {
     background-color: var(--Brand-blue-primary);
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 950px) {
     .footerBar {
         flex-direction: column;
         align-items: start;
@@ -273,7 +274,7 @@ a {
     text-align: left;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 950px) {
     .e404Hero {
         flex-direction: column;
         gap: 24px;
@@ -348,7 +349,7 @@ a {
     align-self: stretch;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 950px) {
     #faqContainerLandscape {
         display: none;
     }
@@ -376,7 +377,7 @@ a {
         margin: 0px;
     }
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 950px) {
     #faqContainerLandscape {
         display: flex;
     }
@@ -464,7 +465,7 @@ a {
     justify-content: center;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 950px) {
     .txHeader {
         font-size: 22px;
         text-wrap-mode: wrap;
@@ -521,7 +522,7 @@ a {
     max-width: 12%;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 950px) {
     .landingContainer {
         position: relative;
         display: inline-block;
@@ -578,7 +579,7 @@ a {
     align-items: center;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 950px) {
     #execContainerLandscape {
         display: none;
     }
@@ -586,7 +587,7 @@ a {
         display: block;
     }
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 950px) {
     #execContainerLandscape {
         display: block;
     }
@@ -696,7 +697,7 @@ a {
     color: var(--Brand-blue-primary);
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 950px) {
     .sponsorHighlightPlat,
     .sponsorHighlightGold,
     .sponsorHighlightSilv,
@@ -720,7 +721,7 @@ a {
     }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 950px) {
     #sponsorLandscape {
         display: flex;
     }
@@ -792,7 +793,7 @@ a {
     font-family: Poppins;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 950px) {
     #upcomingEventsContainerLandscape {
         display: none;
     }
@@ -803,6 +804,12 @@ a {
         display: none;
     }
     #pastEventsContainerMobile {
+        display: flex;
+    }
+    #oppurtunitiesContainerLandscape {
+        display: none;
+    }
+    #oppurtunitiesContainerMobile {
         display: flex;
     }
     .eventContainer{
@@ -841,7 +848,7 @@ a {
         width: 100%;
     }
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 950px) {
     #upcomingEventsContainerLandscape {
         display: flex;
     }
@@ -852,6 +859,12 @@ a {
         display: flex;
     }
     #pastEventsContainerMobile {
+        display: none;
+    }
+    #oppurtunitiesContainerLandscape {
+        display: flex;
+    }
+    #oppurtunitiesContainerMobile {
         display: none;
     }
     .eventDetails .txParagraph2{
@@ -951,7 +964,7 @@ a {
 
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 950px) {
     .historyTabs {
         width: 90%;
         padding: 0px;
@@ -986,7 +999,7 @@ a {
     }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 950px) {
     #execHistoryContainerMobile {
         display: none;
     }
@@ -1115,7 +1128,7 @@ a {
     background-color: var(--BG-Secondary);
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 950px) {
     .sponsorCarousel{
         height: 100px;
 
@@ -1262,7 +1275,7 @@ a {
     padding: 4px 8px;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 950px) {
     #linksContainerLandscape {
         display: none;
     }
@@ -1273,7 +1286,7 @@ a {
         aspect-ratio: 1.3;
     }
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 950px) {
     #linksContainerLandscape {
         display: grid;
     }

@@ -1,14 +1,15 @@
-<!-- Init e404.html -->
+<!-- Init index.html -->
 <!DOCTYPE html>
 <html lang="en-UK" class="lightTheme">
     <head>
         <meta charset="utf-8" />
         <title>Curtin Engineers Club</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" href="css/styles.css" />
-        <script src="scripts/theme.js"></script>
+        <script src="scripts/theme.js" ></script>
         <script src="scripts/index.js" ></script>
-        <link rel="icon" href="assets/icons/CECGearBlack.svg">
+        <script src="scripts/sponsor.js" ></script>
+        <link rel="icon" id="tabIcon" href="assets/icons/CECGearBlack.svg">
         <script src="https://kit.fontawesome.com/4c5395be19.js" crossorigin="anonymous"></script> <!-- Set up to add icons via Font Awesome but currently all Icons are local files--> 
         <script>
             setTheme();
@@ -30,13 +31,12 @@
                 </a>
                 <a id="cecTitle" href="index.html">Curtin Engineers Club</a>
                 <div class="navLinks" id="hamLinks">
-                    <a href="index.html">Home</a>
                     <a href="about.html">About</a>
                     <a href="events.html#1">Events</a>
                     <a href="sponsor.html">Sponsors</a>
                     <a href="history.html#pastExecs">History</a>
                     <a href="links.html">Links</a>
-                    <a href="oppurtunities.html">Oppurtunities</a>
+                    <a href="oppurtunities.html" class="active">Oppurtunities</a>
                 </div>
             </div>
             <div class="navRight" id="navRight">
@@ -49,27 +49,32 @@
         <div class="backdrop" id="hamburgerBackdrop"></div>
         <script>document.getElementById('hamburgerBackdrop').addEventListener('click', hamLinks);</script>
         <div class="hamburgerList" id="hamburgerList">
-            <a href="index.html">Home</a>
+            <a href="index.html" class="active">Home</a>
             <a href="about.html">About</a>
             <a href="events.html#1">Events</a>
             <a href="sponsor.html">Sponsors</a>
             <a href="history.html#pastExecs">History</a>
             <a href="links.html">Links</a>
-            <a href="oppurtunities.html">Oppurtunities</a>
+            <a href="javascript:void(0);" onclick="hamLinks()">Oppurtunities</a>
         </div>
 
-        <!-- Error Message -->
-        <div class="e404Hero">
-            <div class="heroGroup.center">
-                <img src="assets/images/LegomanCoffeeWOutlineLarge.png" alt="Lego Man Coffee White Outline" style="width: 300px; height: auto;">
-            </div>
-            <div class="footerGroup">
-                <p class="txHeader" style="width: max-content;">ERROR 404</p>
-                <p class="txParagraph2">Our Engineer could not find the page you were looking for!</p>
-                <p class="txParagraph2">This could because <br> - The address you searched is incorrect <br> - The address has been changed or removed</p>
-                <a href="index.html" class="blueButton" style="padding: 12px 14px;">Return Home</a>
-            </div>
-        </div>
+        
+        <!-- BG stuff-->
+        <div class="main">
+
+            <p id="oppurtunityHeader" class="txHeader headingBorder" style="margin-bottom: 0px;">Intern and Graduate Oppurtunities</p>
+         
+            <div id="oppurtunitiesContainerLandscape" class="eventContainer" style="margin-bottom: 64px;"></div>
+            <script>
+                updateOppurtunities("oppurtunitiesContainerLandscape", "eventImg");
+            </script>
+
+            <div id="oppurtunitiesContainerMobile" class="eventContainer" style="margin-bottom: 64px;"></div>
+            <script>
+                updateOppurtunities("oppurtunitiesContainerMobile", "eventImgMobile");
+            </script>
+
+        </div> 
 
         <!-- Footer -->
         <div class="heroBar footerBar" style="background-color: #5271FF; align-items: center;">

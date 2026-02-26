@@ -36,6 +36,7 @@
                     <a href="sponsor.html">Sponsors</a>
                     <a href="history.html#pastExecs">History</a>
                     <a href="links.html">Links</a>
+                    <a href="oppurtunities.html">Oppurtunities</a>
                 </div>
             </div>
             <div class="navRight" id="navRight">
@@ -54,6 +55,7 @@
             <a href="sponsor.html">Sponsors</a>
             <a href="history.html#pastExecs">History</a>
             <a href="links.html">Links</a>
+            <a href="oppurtunities.html">Oppurtunities</a>
         </div>
         
         <div class="main">
@@ -119,7 +121,7 @@
             </script>
             
             <script>
-                if(screen.width <= 750){
+                if(screen.width <= 950){
                     var containerID = "upcomingEventsContainerMobile";
                 } else {
                     var containerID = "upcomingEventsContainerLandscape";
@@ -166,11 +168,12 @@
             <script>
                 // Run when hash changes
                 var upContainerID, paContainerID, paImageClass;
-                if(screen.width <= 750){
+                if(screen.width <= 950){
                     upContainerID = "upcomingEventsContainerMobile";
                     paContainerID = "pastEventsContainerMobile";
                     paImageClass = "eventImgMobile";
-                } else {
+                } 
+                else if(screen.width > 950) {
                     upContainerID = "upcomingEventsContainerLandscape";
                     paContainerID = "pastEventsContainerLandscape";
                     paImageClass = "eventImg";

@@ -62,3 +62,57 @@ function getSponsors(level, groupID, filePath){
         container.innerHTML = html;
     })
 }
+
+function fetchOppurtunities(containerID){
+    const date = new Date().getDate().toString().padStart(2, "0");
+    const month = (new Date().getMonth() + 1).toString().padStart(2, "0");
+    const year = new Date().getFullYear();
+    const currentDate = year + "-" + month + "-" + date;
+    const container = document.getElementById(containerID);
+
+    return fetch('data/oppurtunityData.json')
+    .then(res => res.json())
+    .then(oppurtunities => {
+        if(!Array.isArray(oppurtunities) || oppurtunities.length === 0){ 
+            container.innerHTML += `<p class="txSubtitle txMobile">No work oppurtunities at the moment!</p>`;
+            console.log("test");
+        }
+        // else{
+        //     oppurtunities.filter(oppurtunity => oppurtunity.deadline >= currentDate);
+        //     if(!Array.isArray(oppurtunities) || oppurtunities.length === 0){ 
+        //         container.innerHTML += `<p class="txSubtitle txMobile">No work oppurtunities at the moment!</p>`;
+        //         console.log("test3");
+        //     }
+        // }
+        return oppurtunities.filter(oppurtunity => oppurtunity.deadline >= currentDate);
+    });
+}
+
+function updateOppurtunities(containerID, imageClass){
+    fetchOppurtunities(containerID)
+    .then(oppurtunities => {
+        const container = document.getElementById(containerID);
+        oppurtunities.forEach(oppurtunity => {
+
+            if(!Array.isArray(oppurtunities) || oppurtunities.length === 0){ 
+                const container = document.getElementById(containerID);
+                container.innerHTML += `<p class="txSubtitle txMobile">No work oppurtunities at the moment!</p>`;
+                console.log("test2");
+            }
+
+            container.innerHTML += `
+                <div class="eventCard">
+                    <img class=${imageClass} src="${oppurtunity.image}" alt="${oppurtunity.title}">
+                    <div class="eventInfo">
+                        <div class="eventDetails">
+                            <p class="txParagraph1 txWhite">${oppurtunity.title} - ${oppurtunity.company}</p>
+                            <p class="txParagraph2 txWhite">Applications Close<br>${oppurtunity.deadline}</p>
+                        </div>
+                        <p class="txParagraph3 txWhite" style="max-width: none;">${oppurtunity.description}</p>
+                        <a href="${oppurtunity.link}" class="yellowButton" style="padding: 6px 8px;" target="_blank" rel="noopener noreferrer">Find Out More!</a>
+                    </div>
+                </div>
+            `;
+        })
+    })
+}
