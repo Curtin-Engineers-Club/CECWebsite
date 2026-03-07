@@ -1,5 +1,15 @@
 [
     {
+        "title": "Resume Workshop",
+        "day": "18th of March",
+        "time": "12pm-2pm",
+        "description": "Come along and learn from Curtin Careers the perfect way to make your resume suited to any internship or grad role.<br>Targeted for Engineering students but open to all who are looking to improve their resume.",
+        "image": "assets/images/ResumeWorkshop_2026.png",
+        "link": "https://cec.cguild.club/public/schedule/events/81708-graduate-sundowner",
+        "date": "2026-03-18"
+    },
+    
+    {
         "title": "Graduate Sundowner",
         "day": "5th of March",
         "time": "6pm-9pm",
@@ -7,6 +17,16 @@
         "image": "assets/images/GradSundowner_2026.png",
         "link": "https://cec.cguild.club/public/schedule/events/81708-graduate-sundowner",
         "date": "2026-03-05"
+    },
+
+    {
+        "title": "EPP Logbook Info Session",
+        "day": "4th of March",
+        "time": "12pm-2pm",
+        "description": "Calling all Engineering Students!<br>Still need to submit your Engineering Professional Experience & Practice (EPP) Logbook?<br>✨EPP Logbook Information Session✨<br>🗓 Wednesday, 4th March 2026<br>⏰ 12:00 PM – 2:00 PM<br>📍 213.101 Tim Winton LT<br>🤝 Clubs Collaborating: CCEA, CMS, CSME, IEEE, ACES, CEC<br>🎟️ Free for all members",
+        "image": "assets/images/EPP_2026.png",
+        "link": "https://www.instagram.com/p/DVN7bxTkkry/",
+        "date": "2026-03-04"
     },
     
     {

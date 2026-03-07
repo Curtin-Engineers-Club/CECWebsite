@@ -84,7 +84,7 @@ function fetchOppurtunities(containerID){
         //         console.log("test3");
         //     }
         // }
-        return oppurtunities.filter(oppurtunity => oppurtunity.deadline >= currentDate);
+        return oppurtunities.filter(oppurtunity => oppurtunity.deadline >= currentDate).reverse();
     });
 }
 
