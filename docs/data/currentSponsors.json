@@ -33,5 +33,20 @@
         "name": "PROK",
         "logo": "assets/sponsors/ProkBlue.svg",
         "level": "other"
+    },
+    {
+        "name": "Aecom",
+        "logo": "assets/sponsors/AecomBlue.svg",
+        "level": "silver"
+    },
+    {
+        "name": "EA",
+        "logo": "assets/sponsors/EABlue.svg",
+        "level": "other"
+    },
+    {
+        "name": "Tronnox",
+        "logo": "assets/sponsors/TronnoxBlue.svg",
+        "level": "other"
     }
 ]
