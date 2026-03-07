@@ -1,5 +1,15 @@
 [
     {
+        "title": "Resume Workshop",
+        "day": "18th of March",
+        "time": "12pm-2pm",
+        "description": "Come along and learn from Curtin Careers the perfect way to make your resume suited to any internship or grad role.<br>Targeted for Engineering students but open to all who are looking to improve their resume.",
+        "image": "assets/images/ResumeWorkshop_2026.png",
+        "link": "https://cec.cguild.club/public/schedule/events/81708-graduate-sundowner",
+        "date": "2026-03-18"
+    },
+    
+    {
         "title": "Graduate Sundowner",
         "day": "5th of March",
         "time": "6pm-9pm",
