@@ -2,12 +2,32 @@
     {"Staging": "Temporary storage for event details, if whole event is not ready to be put into eventDetails.json"},
     
     {
-        "title": "Graduate Sundowner",
-        "day": "5th of March",
-        "time": "6pm-9pm",
-        "description": "Join us for an exclusive evening designed for engineering students and upcoming graduates looking to launch their careers.<br>This Graduate Engineers Sundowner brings together ambitious future engineers and leading companies offering graduate opportunities.",
+        "title": "Quiz Night",
+        "day": "2nd of April",
+        "time": "6:30pm-late",
+        "description": "The Curtin Engineers Club Annual Quiz Night is here! Test your knowledge, and witt, with trivia, drinks and pizza! Quiz night features general knowledge topics so anyone is welcome to attend.",
         "image": "assets/images/GradSundowner_2026.png",
-        "link": "https://cec.cguild.club/public/schedule/events/81708-graduate-sundowner",
-        "date": "2026-03-05"
+        "link": "https://cec.cguild.club/public/schedule/events/82140-curtin-engineers-club-quiz-night",
+        "date": "2026-04-02"
+    },
+    
+    {
+        "title": "BBQ on the Lawn 2 - (BOTL)",
+        "day": "1st of May",
+        "time": "2pm-6pm",
+        "description": "Fill",
+        "image": "assets/images/BOTL1_2026.png",
+        "link": "https://cec.cguild.club/public/schedule/events/82136-bbq-on-the-lawn-2",
+        "date": "2026-05-01"
+    },
+    
+    {
+        "title": "Engineer Your Career",
+        "day": "6th of May",
+        "time": "12pm-2pm",
+        "description": "Fill",
+        "image": "assets/images/BOTL1_2026.png",
+        "link": "https://cec.cguild.club/public/schedule/events/82136-bbq-on-the-lawn-2",
+        "date": "2026-05-06"
     }
 ]
