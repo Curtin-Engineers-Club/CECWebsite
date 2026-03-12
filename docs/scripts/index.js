@@ -84,9 +84,22 @@ function getLabel(){
     .then(labels => {
         const length = Object.keys(labels).length;
         const index = Math.floor(Math.random() * length);
-        // console.log(index)
-        // console.log(labels[index])
         const container = document.getElementById("siteLabel");
         container.innerHTML = `<div class="wipLabel">${labels[index]}</div>`
+    })
+}
+
+function fetchExecs(category){
+    const year = new Date().getFullYear();
+
+    return fetch('data/execHistory.json')
+    .then(res => res.json())
+    .then(execs => {
+        if(category == "current"){
+            return execs.filter(exec => exec.year == year);
+        }
+        else if(category == "past"){
+            return execs.filter(exec => exec.year != year);
+        }
     })
 }

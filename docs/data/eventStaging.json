@@ -1,16 +1,6 @@
 [
     {"Staging": "Temporary storage for event details, if whole event is not ready to be put into eventDetails.json"},
-    
-    {
-        "title": "Quiz Night",
-        "day": "2nd of April",
-        "time": "6:30pm-late",
-        "description": "The Curtin Engineers Club Annual Quiz Night is here! Test your knowledge, and witt, with trivia, drinks and pizza! Quiz night features general knowledge topics so anyone is welcome to attend.",
-        "image": "assets/images/GradSundowner_2026.png",
-        "link": "https://cec.cguild.club/public/schedule/events/82140-curtin-engineers-club-quiz-night",
-        "date": "2026-04-02"
-    },
-    
+       
     {
         "title": "BBQ on the Lawn 2 - (BOTL)",
         "day": "1st of May",
@@ -29,5 +19,15 @@
         "image": "assets/images/BOTL1_2026.png",
         "link": "https://cec.cguild.club/public/schedule/events/82136-bbq-on-the-lawn-2",
         "date": "2026-05-06"
+    },
+    
+    {
+        "title": "Enternal Dusk - Ignite Ball",
+        "day": "8th of August",
+        "time": "6pm-Midnight",
+        "description": "Fill",
+        "image": "assets/images/IgniteBall_2025.png",
+        "link": "_",
+        "date": "2026-08-08"
     }
 ]

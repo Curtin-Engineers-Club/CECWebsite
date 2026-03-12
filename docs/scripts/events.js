@@ -109,10 +109,10 @@ function fetchEvents(category) {
     .then(res => res.json())
     .then(events => {
         if(category == "past"){ 
-            return events.filter(event => event.date <= currentDate);
+            return events.filter(event => event.date <= currentDate); // past 
         }
         else if (category == "upcoming"){ 
-            return events.filter(event => event.date >= currentDate).reverse();
+            return events.filter(event => event.date >= currentDate).reverse(); // upcoming
         }
         return events;
     });

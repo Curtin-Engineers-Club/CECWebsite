@@ -136,43 +136,45 @@
             <!-- Landscape -->
             <div id="execContainerLandscape" class="heroContainerCOL" style="margin-left: 50px; margin-bottom: 30px;"></div>
             <script>
-                fetch('data/currentExecs.json')
-                .then(res => res.json())
+                fetchExecs("current")
                 .then(execs => {
-                    const container = document.getElementById('execContainerLandscape')
+                    const container = document.getElementById('execContainerLandscape');
                     let rowHTML = '';
-                    execs.forEach((exec, i) => {
-                        const random = Math.floor(Math.random() * 2);
-                        const profileHTML = `
-                            <div class="execProfile">
-                                <img class="${random % 2 === 0 ? 'execPhotoBlue' : 'execPhotoYellow'}" src="${exec.image}">
-                                <div class="txColumn">
-                                    <p class="txExecProf">${exec.name}</p>
-                                    <p class="txExecProf">${exec.role}</p>
+                    execs.forEach(yearObj => {
+                        yearObj.roles.forEach((exec, i) => {
+                            const random = Math.floor(Math.random() * 2);
+                            const profileHTML = `
+                                <div class="execProfile">
+                                    <img class="${random % 2 === 0 ? 'execPhotoBlue' : 'execPhotoYellow'}" src="${exec.image}">
+                                    <div class="txColumn">
+                                        <p class="txExecProf">${exec.name}</p>
+                                        <p class="txExecProf">${exec.role}</p>
+                                    </div>
                                 </div>
-                            </div>
-                        `;
-                        if (i % 2 === 0){
-                            rowHTML += `<div class="execRow">`;
-                        }
-                        rowHTML += profileHTML;
-                        if (i % 2 === 1 || i === execs.length - 1) {
-                            rowHTML += `</div>`;
-                        }
+                            `;
+                            if (i % 2 === 0){
+                                rowHTML += `<div class="execRow">`;
+                            }
+                            rowHTML += profileHTML;
+                            if (i % 2 === 1 || i === yearObj.length - 1) {
+                                rowHTML += `</div>`;
+                            }
+                        })
                     });
                     container.innerHTML = rowHTML;
-                });
+                })
             </script>
 
             <!-- Mobile -->
             <div id="execContainerPortrait" class="heroContainerCOL" style="margin-left: 50px;"></div>
             <script>
-                fetch('data/currentExecs.json')
-                .then(res => res.json())
+                fetchExecs("current")
                 .then(execs => {
+                    
                     const container = document.getElementById('execContainerPortrait')
                     let profileHTML = '';
-                    execs.forEach(exec => {
+                    execs.forEach(yearObj => {
+                        yearObj.roles.forEach(exec => {
                         const random = Math.floor(Math.random() * 2);
                         profileHTML += `
                             <div class="execProfile" style="margin-bottom: 16px; max-width: 100%; padding: 8px">
@@ -183,9 +185,10 @@
                                 </div>
                             </div>
                         `;
+                        });
                     });
                     container.innerHTML = profileHTML;
-                });
+                })
             </script>
         </div> 
 
