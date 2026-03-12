@@ -2,6 +2,7 @@
 
 let _sponsorCache = null;
 
+// Function to read in currentSponsor.json
 function fetchSponsors(filePath){
     if(_sponsorCache) return Promise.resolve(_sponsorCache);
     return fetch(filePath || '.data/currentSponsors.json')
@@ -13,7 +14,7 @@ function fetchSponsors(filePath){
         .catch(err => {console.error(err); throw err;})
 }
 
-
+// Function to get correct Class based on sponsor level
 function sponsorLevel(level){
     switch((level||'').toLowerCase()){
         case 'platinum': return 'sponsorHighlightPlat';
@@ -24,10 +25,12 @@ function sponsorLevel(level){
     }
 }
 
+// Function to load sponsor data into HTML
 function getSponsors(level, groupID, filePath){
     fetchSponsors(filePath).then(sponsor => {
         const container = document.getElementById(groupID);
         
+        // Ensure sponsor data array is not empty
         if(!Array.isArray(sponsor) || sponsor.length === 0){
             container.innerHTML = `<!-- no ${level} sponsors -->`;
             return;
@@ -63,7 +66,9 @@ function getSponsors(level, groupID, filePath){
     })
 }
 
+// Function to read in and filter opportunity data
 function fetchOppurtunities(containerID){
+    // Get current date
     const date = new Date().getDate().toString().padStart(2, "0");
     const month = (new Date().getMonth() + 1).toString().padStart(2, "0");
     const year = new Date().getFullYear();
@@ -73,10 +78,11 @@ function fetchOppurtunities(containerID){
     return fetch('data/oppurtunityData.json')
     .then(res => res.json())
     .then(oppurtunities => {
-        if(!Array.isArray(oppurtunities) || oppurtunities.length === 0){ 
+        if(!Array.isArray(oppurtunities) || oppurtunities.length === 0){ // If opportunity data empty, show supplementary message
             container.innerHTML += `<p class="txSubtitle txMobile">No work oppurtunities at the moment!</p>`;
             console.log("test");
         }
+        // Attempt at showing "No Opportunities" message when json file is filled with out of date opportunities
         // else{
         //     oppurtunities.filter(oppurtunity => oppurtunity.deadline >= currentDate);
         //     if(!Array.isArray(oppurtunities) || oppurtunities.length === 0){ 
@@ -84,22 +90,27 @@ function fetchOppurtunities(containerID){
         //         console.log("test3");
         //     }
         // }
-        return oppurtunities.filter(oppurtunity => oppurtunity.deadline >= currentDate).reverse();
+
+        // Filter out opportunities past deadline and return active roles
+        return oppurtunities.filter(oppurtunity => oppurtunity.deadline >= currentDate).reverse(); 
     });
 }
 
+// Function to generate HTML for opportunity data
 function updateOppurtunities(containerID, imageClass){
     fetchOppurtunities(containerID)
     .then(oppurtunities => {
         const container = document.getElementById(containerID);
         oppurtunities.forEach(oppurtunity => {
 
+            // Check there are opportunities to display
             if(!Array.isArray(oppurtunities) || oppurtunities.length === 0){ 
                 const container = document.getElementById(containerID);
                 container.innerHTML += `<p class="txSubtitle txMobile">No work oppurtunities at the moment!</p>`;
                 console.log("test2");
             }
 
+            // HTML code for individual oppurtunity entry
             container.innerHTML += `
                 <div class="eventCard">
                     <img class=${imageClass} src="${oppurtunity.image}" alt="${oppurtunity.title}">

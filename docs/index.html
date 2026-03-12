@@ -3,26 +3,26 @@
 <html lang="en-UK" class="lightTheme">
     <head>
         <meta charset="utf-8" />
-        <title>Curtin Engineers Club</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="stylesheet" href="css/styles.css" />
-        <script src="scripts/theme.js" ></script>
-        <script src="scripts/index.js" ></script>
-        <link rel="icon" id="tabIcon" href="assets/icons/CECGearBlack.svg">
-        <script src="https://kit.fontawesome.com/4c5395be19.js" crossorigin="anonymous"></script> <!-- Set up to add icons via Font Awesome but currently all Icons are local files--> 
+        <title>Curtin Engineers Club</title> <!--Tab Title-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!--Scale and Sizing of the page-->
+        <link rel="stylesheet" href="css/styles.css" /> <!--Links style sheet-->
+        <script src="scripts/theme.js" ></script> <!-- Links theme JavaScript file-->
+        <script src="scripts/index.js" ></script> <!-- Links index JavaScript file-->
+        <link rel="icon" id="tabIcon" href="assets/icons/CECGearBlack.svg"> <!-- Set tab icon -->
         <script>
             setTheme();
             document.addEventListener("DOMContentLoaded", updateThemeIcons);
         </script>
     </head>
     <body>
+        <!-- Site Label -->
         <div class="wipLabel" id="siteLabel">
             <script>getLabel()</script>
         </div>
-        <!-- Navigation Bar-->
+        <!-- Navigation Bar -->
         <div class="navigationBar" id="navbar">
             <div class="navLeft" id="navLeft">
-                <a href="javascript:void(0);" onclick="hamLinks()" id="hamIcon">
+                <a href="javascript:void(0);" onclick="hamLinks()" id="hamIcon"> 
                     <img class='icon' src="assets/icons/hamburgerIconBlack.svg" id="hamburgerIcon" style="width: 36;">
                 </a>
                 <a href="javascript:void(0);" id="gearIcon" class="icon" style="width: 36px; height: 36px;">
@@ -141,22 +141,23 @@
                     const container = document.getElementById('execContainerLandscape');
                     let rowHTML = '';
                     execs.forEach(yearObj => {
-                        yearObj.roles.forEach((exec, i) => {
-                            const random = Math.floor(Math.random() * 2);
-                            const profileHTML = `
+                        yearObj.roles.forEach((exec, i) => { // Go through exec data entries, increamenting i
+                            const random = Math.floor(Math.random() * 2); // 50/50 chance 
+                            // Generate HTML for exec profile and set border to blue or yellow based on 50/50
+                            const profileHTML = ` 
                                 <div class="execProfile">
-                                    <img class="${random % 2 === 0 ? 'execPhotoBlue' : 'execPhotoYellow'}" src="${exec.image}">
+                                    <img class="${random % 2 === 0 ? 'execPhotoBlue' : 'execPhotoYellow'}" src="${exec.image}"> 
                                     <div class="txColumn">
                                         <p class="txExecProf">${exec.name}</p>
                                         <p class="txExecProf">${exec.role}</p>
                                     </div>
                                 </div>
                             `;
-                            if (i % 2 === 0){
+                            if (i % 2 === 0){ // If exec profile is first in a row
                                 rowHTML += `<div class="execRow">`;
                             }
-                            rowHTML += profileHTML;
-                            if (i % 2 === 1 || i === yearObj.length - 1) {
+                            rowHTML += profileHTML; // Add profile to the row set above
+                            if (i % 2 === 1 || i === yearObj.length - 1) { // Add other profile in row to html, or if profile is only one in row (7th)
                                 rowHTML += `</div>`;
                             }
                         })
