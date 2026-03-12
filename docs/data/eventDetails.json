@@ -1,5 +1,15 @@
 [
     {
+        "title": "Quiz Night",
+        "day": "2nd of April",
+        "time": "6:30pm-late",
+        "description": "The Curtin Engineers Club Annual Quiz Night is here! Test your knowledge, and witt, with trivia, drinks and pizza! Quiz night features general knowledge topics so anyone is welcome to attend.<br><br>Tickets include free pizza, access to the bar and the chance to win some awesome prizes! Grab 6 of your friends to purchase a table for $40 or you can purchase an individual ticket for $9 and we'll organise your table for you. Doors open at 6:00!",
+        "image": "assets/images/Quiznight_2026.png",
+        "link": "https://cec.cguild.club/public/schedule/events/82140-curtin-engineers-club-quiz-night",
+        "date": "2026-04-02"
+    },
+
+    {
         "title": "Resume Workshop",
         "day": "18th of March",
         "time": "12pm-2pm",
