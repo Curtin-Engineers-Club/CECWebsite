@@ -48,5 +48,10 @@
         "name": "Tronnox",
         "logo": "assets/sponsors/TronnoxBlue.svg",
         "level": "other"
+    },
+    {
+        "name": "SilverWolf",
+        "logo": "assets/sponsors/SilverWolfBlue.svg",
+        "level": "gold"
     }
 ]
