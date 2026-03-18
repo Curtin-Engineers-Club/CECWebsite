@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/styles.css" /> <!--Links style sheet-->
         <script src="scripts/theme.js" ></script> <!-- Links theme JavaScript file-->
         <script src="scripts/index.js" ></script> <!-- Links index JavaScript file-->
+        <script src="scripts/sponsor.js" ></script> <!-- Links sponsor JavaScript file-->
         <link rel="icon" id="tabIcon" href="assets/icons/CECGearBlack.svg"> <!-- Set tab icon -->
         <script>
             setTheme();
@@ -113,18 +114,7 @@
                 <div id="sponsorCarousel" class="sponsorCarousel">
                     <div id="sponsorBar" class="sponsorBar">
                         <script>
-                            fetch('data/pastSponsors.json')
-                            .then(res => res.json())
-                            .then(sponsors => {
-                                const innerContainer = document.getElementById('sponsorBar');
-                                let html = ``;
-                                sponsors.forEach(sponsorObj => {
-                                    html += `
-                                        <img class="sponsorLogo" alt="${sponsorObj.name}" src="${sponsorObj.logo}">
-                                    `;
-                                });
-                                innerContainer.innerHTML = html + html;
-                            });
+                            sponsorCarousel("sponsorBar");
                         </script>
                     </div>
                 </div>

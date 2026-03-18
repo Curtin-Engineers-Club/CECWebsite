@@ -14,6 +14,40 @@ function fetchSponsors(filePath){
         .catch(err => {console.error(err); throw err;})
 }
 
+function sponsorCarousel(container){
+    const innerContainer = document.getElementById(container);
+    let html = ``;
+    let checkedSponsors = [];
+
+    Promise.all([
+        fetch('data/pastSponsors.json').then(res => res.json()),
+        fetch('data/currentSponsors.json').then(res => res.json())
+    ]).then(([pastSponsors, currentSponsors]) => {
+        // Add past sponsors
+        pastSponsors.forEach(sponsorObj => {
+            html += `
+                <img class="sponsorLogo" alt="${sponsorObj.name}" src="${sponsorObj.logo}">
+            `;
+            checkedSponsors.push(sponsorObj.name);
+        });
+
+        // Add current sponsors if not already added
+        currentSponsors.forEach(sponsorObj => {
+            if (!checkedSponsors.includes(sponsorObj.name)) {
+                html += `
+                    <img class="sponsorLogo" alt="${sponsorObj.name}" src="${sponsorObj.logo}">
+                `;
+                checkedSponsors.push(sponsorObj.name);
+            }
+        });
+
+        innerContainer.innerHTML = html + html;
+    }).catch(err => {
+        console.error('Failed to load sponsors:', err);
+        innerContainer.innerHTML = '';
+    });
+}
+
 // Function to get correct Class based on sponsor level
 function sponsorLevel(level){
     switch((level||'').toLowerCase()){
@@ -92,7 +126,7 @@ function fetchOppurtunities(containerID){
         // }
 
         // Filter out opportunities past deadline and return active roles
-        return oppurtunities.filter(oppurtunity => oppurtunity.deadline >= currentDate).reverse(); 
+        return oppurtunities.filter(oppurtunity => oppurtunity.deadline >= currentDate); 
     });
 }
 
