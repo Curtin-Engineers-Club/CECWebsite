@@ -1,5 +1,15 @@
 [
     {
+        "title": "An Eternal Dusk Ignite Ball",
+        "day": "8th of August",
+        "time": "6:00pm-midnight",
+        "description": "You have been cordially invited, to the annual Curtin Engineers Club Ignite Ball. Find solace away from the hauntings of everyday life and join us in a a moon-lit evening of elegance and fun.<br>Adorn your Sunday-best with a black tie dress code in which we encourage you to add your own gothic twist.<br>Tickets are limited and will sell quick!",
+        "image": "assets/images/IgniteBall_2026.png",
+        "link": "https://www.facebook.com/events/1684935672848809/",
+        "date": "2026-08-08"
+    },
+
+    {
         "title": "Quiz Night",
         "day": "2nd of April",
         "time": "6:30pm-late",
