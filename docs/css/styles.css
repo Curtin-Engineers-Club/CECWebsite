@@ -806,10 +806,10 @@ a {
     #pastEventsContainerMobile {
         display: flex;
     }
-    #oppurtunitiesContainerLandscape {
+    #opportunitiesContainerLandscape {
         display: none;
     }
-    #oppurtunitiesContainerMobile {
+    #opportunitiesContainerMobile {
         display: flex;
     }
     .eventContainer{
@@ -861,10 +861,10 @@ a {
     #pastEventsContainerMobile {
         display: none;
     }
-    #oppurtunitiesContainerLandscape {
+    #opportunitiesContainerLandscape {
         display: flex;
     }
-    #oppurtunitiesContainerMobile {
+    #opportunitiesContainerMobile {
         display: none;
     }
     .eventDetails .txParagraph2{

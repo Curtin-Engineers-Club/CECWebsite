@@ -16,8 +16,8 @@ function scrollRotate(){
 
 // Function to open and close the Meeting Pop-up 
 function popupFunc(){
-    var x = document.getElementById("meetingPopup");
-    var y = document.getElementById("meetingPopupButton");
+    let x = document.getElementById("meetingPopup");
+    // let y = document.getElementById("meetingPopupButton");
 
     if(x.style.display === "none"){ //Switch from closed to open
         x.style.display = "block";
@@ -31,14 +31,14 @@ function popupFunc(){
 function changeHistoryTab(){
     const hash = location.hash
     // All tab body elements
-    var ch = document.getElementById("Club History");
-    var pe = document.getElementById("Past Executives");
-    var lm = document.getElementById("Life Members");
+    let ch = document.getElementById("Club History");
+    let pe = document.getElementById("Past Executives");
+    let lm = document.getElementById("Life Members");
 
     // All tab heading elements
-    var chHeading = document.getElementById("clubHistoryHeading");
-    var peHeading = document.getElementById("pastExecsHeading");
-    var lmHeading = document.getElementById("lifeMembersHeading");
+    let chHeading = document.getElementById("clubHistoryHeading");
+    let peHeading = document.getElementById("pastExecsHeading");
+    let lmHeading = document.getElementById("lifeMembersHeading");
 
     // Switch to Club History
     if(hash === "#clubHistory"){
@@ -79,7 +79,7 @@ function changeHistoryTab(){
 
 // Function to open and close the hamburger menu on mobile 
 function hamLinks(){
-    var linkList = document.getElementById("hamburgerList");
+    let linkList = document.getElementById("hamburgerList");
     if (linkList.style.display === "flex"){ // Check if menu is open, then close it 
         linkList.style.display = "none";
         document.getElementById('hamburgerBackdrop').classList.remove('show');
@@ -108,11 +108,11 @@ function fetchExecs(category){
     return fetch('data/execHistory.json')
     .then(res => res.json())
     .then(execs => {
-        if(category == "current"){ // Get current committee
-            return execs.filter(exec => exec.year == year);
+        if(category === "current"){ // Get current committee
+            return execs.filter(exec => exec.year === year);
         }
-        else if(category == "past"){ // Get all Committees other than current
-            return execs.filter(exec => exec.year != year);
+        else if(category === "past"){ // Get all Committees other than current
+            return execs.filter(exec => exec.year !== year);
         }
     })
 }

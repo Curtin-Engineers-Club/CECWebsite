@@ -24,10 +24,10 @@
         <div class="navigationBar" id="navbar">
             <div class="navLeft" id="navLeft">
                 <a href="javascript:void(0);" onclick="hamLinks()" id="hamIcon"> 
-                    <img class='icon' src="assets/icons/hamburgerIconBlack.svg" id="hamburgerIcon" style="width: 36;">
+                    <img class='icon' src="assets/icons/hamburgerIconBlack.svg" id="hamburgerIcon" alt="Hamburger Menu Icon" style="width: 36px;">
                 </a>
                 <a href="javascript:void(0);" id="gearIcon" class="icon" style="width: 36px; height: 36px;">
-                    <img class='icon' src="assets/icons/CECGearBlack.svg" id="CECLogo" style="width: 36px; height: 36px;">
+                    <img class='icon' src="assets/icons/CECGearBlack.svg" id="CECLogo" alt="CEC Logo" style="width: 36px; height: 36px;">
                 </a>
                 <a id="cecTitle" href="">Curtin Engineers Club</a>
                 <div class="navLinks" id="hamLinks">
@@ -36,12 +36,12 @@
                     <a href="sponsor.html">Sponsors</a>
                     <a href="history.html#pastExecs">History</a>
                     <a href="links.html">Links</a>
-                    <a href="oppurtunities.html">Opportunities</a>
+                    <a href="opportunities.html">Opportunities</a>
                 </div>
             </div>
             <div class="navRight" id="navRight">
                 <button class="icon" id="themeToggle" onclick="changeTheme()">
-                    <img class="icon" id="themeToggleIcon" src="assets/icons/DARKMODE-IconBlack.svg">
+                    <img class="icon" id="themeToggleIcon" alt="Theme Toggle Icon" src="assets/icons/DARKMODE-IconBlack.svg">
                 </button>
                 <a href="https://curtin-cec.tidyhq.com/public/membership_levels" class="yellowButton" target="_blank" rel="noopener noreferrer">Sign Up!</a>
             </div>
@@ -49,13 +49,13 @@
         <div class="backdrop" id="hamburgerBackdrop"></div>
         <script>document.getElementById('hamburgerBackdrop').addEventListener('click', hamLinks);</script>
         <div class="hamburgerList" id="hamburgerList">
-            <a href="javascript:void(0);" onclick="hamLinks()"class="active">Home</a>
+            <a href="javascript:void(0);" onclick="hamLinks()" class="active">Home</a>
             <a href="about.html">About</a>
             <a href="events.html#1">Events</a>
             <a href="sponsor.html">Sponsors</a>
             <a href="history.html#pastExecs">History</a>
             <a href="links.html">Links</a>
-            <a href="oppurtunities.html">Opportunities</a>
+            <a href="opportunities.html">Opportunities</a>
         </div>
 
         <!-- Landing Image -->
@@ -84,7 +84,7 @@
             <div class="heroContainer heroContainerCOL" id="aboutLandscape">
                 <div class="heroGroup">
                     <h2 class="txSubtitle subtitleBorder">What is CEC About?</h2>
-                    <p class="txParagraph1" style="text-align: justify;">Curtin Engineers Club (CEC) is a multi-disciplinary engineering club that holds numerous social and professional events, helps students connect with each other and provides resources to its members. Being a social club, CEC welcomes all students, not just engineering students, with events such as BOTL or Pubcrawl purely for socialising. 
+                    <p class="txParagraph1" style="text-align: justify;">Curtin Engineers Club (CEC) is a multidisciplinary engineering club that holds numerous social and professional events, helps students connect with each other and provides resources to its members. Being a social club, CEC welcomes all students, not just engineering students, with events such as BOTL or Pubcrawl purely for socialising.
 <br>CEC can also support those looking to further their career with our networking nights and skill based workshops. These are more tailored to engineering students, with professional events hosting industry representatives for you to establish relations with and learn about the workforce from.<br><br>Come find us in the Engineering Pavilion, room 106!
 </p>
                 </div>
@@ -110,7 +110,7 @@
                     </div>
                 </div>
                 
-                <!-- Sponosr Carousel (CSS Animation)-->
+                <!-- Sponsor Carousel (CSS Animation)-->
                 <div id="sponsorCarousel" class="sponsorCarousel">
                     <div id="sponsorBar" class="sponsorBar">
                         <script>
@@ -131,12 +131,12 @@
                     const container = document.getElementById('execContainerLandscape');
                     let rowHTML = '';
                     execs.forEach(yearObj => {
-                        yearObj.roles.forEach((exec, i) => { // Go through exec data entries, increamenting i
+                        yearObj.roles.forEach((exec, i) => { // Go through exec data entries, incrementing i
                             const random = Math.floor(Math.random() * 2); // 50/50 chance 
                             // Generate HTML for exec profile and set border to blue or yellow based on 50/50
                             const profileHTML = ` 
                                 <div class="execProfile">
-                                    <img class="${random % 2 === 0 ? 'execPhotoBlue' : 'execPhotoYellow'}" src="${exec.image}"> 
+                                    <img class="${random % 2 === 0 ? 'execPhotoBlue' : 'execPhotoYellow'}" alt="Exec Portraint: ${exec.name}" src="${exec.image}">
                                     <div class="txColumn">
                                         <p class="txExecProf">${exec.name}</p>
                                         <p class="txExecProf">${exec.role}</p>
@@ -147,7 +147,7 @@
                                 rowHTML += `<div class="execRow">`;
                             }
                             rowHTML += profileHTML; // Add profile to the row set above
-                            if (i % 2 === 1 || i === yearObj.length - 1) { // Add other profile in row to html, or if profile is only one in row (7th)
+                            if (i % 2 === 1 || i === yearObj.length - 1) { // Add other profile in row to HTML, or if profile is only one in row (7th)
                                 rowHTML += `</div>`;
                             }
                         })
@@ -168,7 +168,7 @@
                         const random = Math.floor(Math.random() * 2);
                         profileHTML += `
                             <div class="execProfile" style="margin-bottom: 16px; max-width: 100%; padding: 8px">
-                                <img class="${random % 2 === 0 ? 'execPhotoBlue' : 'execPhotoYellow'}" src="${exec.image}">
+                                <img class="${random % 2 === 0 ? 'execPhotoBlue' : 'execPhotoYellow'}" alt="Exec Portrait: ${exec.name}" src="${exec.image}">
                                 <div class="txColumn">
                                     <p class="txExecProf">${exec.name}</p>
                                     <p class="txExecProf">${exec.role}</p>
@@ -191,13 +191,13 @@
             </div>
             <div class="footerGroup">
                 <p class="txSubtitle txWhite" style="text-align: left; margin-bottom: 5px;">Contact Us:</p>
-                <a href="mailto:contact@cec.curtin.edu.au" class="txParagraph1 txWhite" style="margin-bottom: 30px; margin-top: 0px;">contact@cec.curtin.edu.au</p>
+                <a href="mailto:contact@cec.curtin.edu.au" class="txParagraph1 txWhite" style="margin-bottom: 30px; margin-top: 0px;">contact@cec.curtin.edu.au</a>
                 <a href="https://github.com/Curtin-Engineers-Club/CECWebsite" class="txParagraph3 txWhite" style="margin-bottom: 5px;" target="_blank" rel="noopener noreferrer">@ CEC <script>document.write(new Date().getFullYear())</script> <br> Design and Code by Rhett Bauchop</a>
                 <a href="https://forms.gle/yeJXGU1PxYxsbpKh6" class="txParagraph3 txWhite" style="margin-bottom: 30px;" target="_blank" rel="noopener noreferrer"><br>Report Bugs Here!</a>
             </div>
             <div class="iconGrid">
                 <a href="https://guild.curtin.edu.au/" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/icons/CUR-GUILD-Logo-Secondary-WHITE.png" alt="Curtin Guild Logo"> <!-- Curtin Guiild Logo -->
+                    <img src="assets/icons/CUR-GUILD-Logo-Secondary-WHITE.png" alt="Curtin Guild Logo"> <!-- Curtin Guild Logo -->
                 </a>
                 <a href="https://www.facebook.com/CurtinEngineersClub" target="_blank" rel="noopener noreferrer">
                     <img src="assets/icons/FB-Icon.png" alt="Facebook Logo"> <!-- Facebook Logo -->
@@ -206,7 +206,7 @@
                     <img src="assets/icons/IG-Icon.png" alt="Instagram Logo"> <!-- Instagram Logo -->
                 </a>
                 <a href="https://au.linkedin.com/company/curtin-engineers-club" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/icons/INDEED-Icon.png" alt="Linkedin Logo"> <!-- Linkedin Logo -->
+                    <img src="assets/icons/INDEED-Icon.png" alt="LinkedIn Logo"> <!-- LinkedIn Logo -->
                 </a>
             </div>
         </div>

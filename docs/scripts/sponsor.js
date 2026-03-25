@@ -90,18 +90,17 @@ function getSponsors(level, groupID, filePath){
             return;
         }
 
-        const html = filtered.map(s => {
+        container.innerHTML = filtered.map(s => {
             const name = s.name ? String(s.name).replace(/"/g, '&quot;') : '';
             const logo = s.logo ? String(s.logo).replace(/"/g, '&quot;') : '';
             const color = Math.random() < 0.5 ? '#5271ff' : '#FFEB31';
             return `<img alt="${name}" src="${logo}" class="${cssClass}" style="border-color: ${color}">`;
         }).join('\n');
-        container.innerHTML = html;
     })
 }
 
 // Function to read in and filter opportunity data
-function fetchOppurtunities(containerID){
+function fetchOpportunities(containerID){
     // Get current date
     const date = new Date().getDate().toString().padStart(2, "0");
     const month = (new Date().getMonth() + 1).toString().padStart(2, "0");
@@ -109,52 +108,52 @@ function fetchOppurtunities(containerID){
     const currentDate = year + "-" + month + "-" + date;
     const container = document.getElementById(containerID);
 
-    return fetch('data/oppurtunityData.json')
+    return fetch('data/opportunityData.json')
     .then(res => res.json())
-    .then(oppurtunities => {
-        if(!Array.isArray(oppurtunities) || oppurtunities.length === 0){ // If opportunity data empty, show supplementary message
-            container.innerHTML += `<p class="txSubtitle txMobile">No work oppurtunities at the moment!</p>`;
-            console.log("test");
+    .then(opportunities => {
+        if(!Array.isArray(opportunities) || opportunities.length === 0){ // If opportunity data empty, show supplementary message
+            container.innerHTML += `<p class="txSubtitle txMobile">No work opportunities at the moment!</p>`;
+            console.log("No work opportunities");
         }
-        // Attempt at showing "No Opportunities" message when json file is filled with out of date opportunities
+        // Attempt at showing "No Opportunities" message when JSON file is filled without of date opportunities
         // else{
-        //     oppurtunities.filter(oppurtunity => oppurtunity.deadline >= currentDate);
-        //     if(!Array.isArray(oppurtunities) || oppurtunities.length === 0){ 
-        //         container.innerHTML += `<p class="txSubtitle txMobile">No work oppurtunities at the moment!</p>`;
+        //     opportunities.filter(opportunity => opportunity.deadline >= currentDate);
+        //     if(!Array.isArray(opportunities) || opportunities.length === 0){
+        //         container.innerHTML += `<p class="txSubtitle txMobile">No work opportunities at the moment!</p>`;
         //         console.log("test3");
         //     }
         // }
 
         // Filter out opportunities past deadline and return active roles
-        return oppurtunities.filter(oppurtunity => oppurtunity.deadline >= currentDate); 
+        return opportunities.filter(opportunity => opportunity.deadline >= currentDate);
     });
 }
 
 // Function to generate HTML for opportunity data
-function updateOppurtunities(containerID, imageClass){
-    fetchOppurtunities(containerID)
-    .then(oppurtunities => {
+function updateOpportunities(containerID, imageClass){
+    fetchOpportunities(containerID)
+    .then(opportunities => {
         const container = document.getElementById(containerID);
-        oppurtunities.forEach(oppurtunity => {
+        opportunities.forEach(opportunity => {
 
             // Check there are opportunities to display
-            if(!Array.isArray(oppurtunities) || oppurtunities.length === 0){ 
+            if(!Array.isArray(opportunities) || opportunities.length === 0){
                 const container = document.getElementById(containerID);
-                container.innerHTML += `<p class="txSubtitle txMobile">No work oppurtunities at the moment!</p>`;
+                container.innerHTML += `<p class="txSubtitle txMobile">No work opportunities at the moment!</p>`;
                 console.log("test2");
             }
 
-            // HTML code for individual oppurtunity entry
+            // HTML code for individual opportunity entry
             container.innerHTML += `
                 <div class="eventCard">
-                    <img class=${imageClass} src="${oppurtunity.image}" alt="${oppurtunity.title}">
+                    <img class=${imageClass} src="${opportunity.image}" alt="${opportunity.title}">
                     <div class="eventInfo">
                         <div class="eventDetails">
-                            <p class="txParagraph1 txWhite">${oppurtunity.title} - ${oppurtunity.company}</p>
-                            <p class="txParagraph2 txWhite">Applications Close<br>${oppurtunity.deadline}</p>
+                            <p class="txParagraph1 txWhite">${opportunity.title} - ${opportunity.company}</p>
+                            <p class="txParagraph2 txWhite">Applications Close<br>${opportunity.deadline}</p>
                         </div>
-                        <p class="txParagraph3 txWhite" style="max-width: none;">${oppurtunity.description}</p>
-                        <a href="${oppurtunity.link}" class="yellowButton" style="padding: 6px 8px;" target="_blank" rel="noopener noreferrer">Find Out More!</a>
+                        <p class="txParagraph3 txWhite" style="max-width: none;">${opportunity.description}</p>
+                        <a href="${opportunity.link}" class="yellowButton" style="padding: 6px 8px;" target="_blank" rel="noopener noreferrer">Find Out More!</a>
                     </div>
                 </div>
             `;
