@@ -1,67 +1,67 @@
 [
     {
         "name": "Stantec",
-        "logo": "assets/sponsors/StantecBlue.svg",
+        "logo": "assets/sponsors/StantecLogo.svg",
         "level": "silver"
     },
     {
         "name": "Pacific Energy",
-        "logo": "assets/sponsors/PacificEBlue.svg",
+        "logo": "assets/sponsors/PacificELogo.svg",
         "level": "gold"
     },
     {
         "name": "civmec",
-        "logo": "assets/sponsors/CivmecBlue.svg",
+        "logo": "assets/sponsors/CivmecLogo.svg",
         "level": "silver"
     },
     {
         "name": "Partnets In Performance",
-        "logo": "assets/sponsors/PIPBlue.svg",
+        "logo": "assets/sponsors/PIPLogo.svg",
         "level": "silver"
     },
     {
         "name": "Fortescue",
-        "logo": "assets/sponsors/FortescueBlue.svg",
+        "logo": "assets/sponsors/FortescueLogo.svg",
         "level": "silver"
     },
     {
         "name": "Partum",
-        "logo": "assets/sponsors/PartumBlue.svg",
+        "logo": "assets/sponsors/PartumLogo.svg",
         "level": "silver"
     },
     {
         "name": "Deloitte",
-        "logo": "assets/sponsors/DeloitteBlue.svg",
+        "logo": "assets/sponsors/DeloitteLogo.svg",
         "level": "other"
     },
     {
         "name": "PROK",
-        "logo": "assets/sponsors/ProkBlue.svg",
+        "logo": "assets/sponsors/ProkLogo.svg",
         "level": "silver"
     },
     {
         "name": "GHD",
-        "logo": "assets/sponsors/GHDBlue.svg",
+        "logo": "assets/sponsors/GHDLogo.svg",
         "level": "other"
     },
     {
         "name": "SLB",
-        "logo": "assets/sponsors/SLBBlue.svg",
+        "logo": "assets/sponsors/SLBLogo.svg",
         "level": "silver"
     },
     {
         "name": "WGA",
-        "logo": "assets/sponsors/WGABlue.svg",
+        "logo": "assets/sponsors/WGALogo.svg",
         "level": "gold"
     },
     {
         "name": "Yarra",
-        "logo": "assets/sponsors/YarraBlue.svg",
+        "logo": "assets/sponsors/YarraLogo.svg",
         "level": "silver"
     },
     {
         "name": "EA",
-        "logo": "assets/sponsors/EABlue.svg",
+        "logo": "assets/sponsors/EALogo.svg",
         "level": "other"
     }
 ]

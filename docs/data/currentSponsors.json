@@ -1,57 +1,57 @@
 [
     {
         "name": "Stantec",
-        "logo": "assets/sponsors/StantecBlue.svg",
+        "logo": "assets/sponsors/StantecLogo.svg",
         "level": "silver"
     },
     {
         "name": "civmec",
-        "logo": "assets/sponsors/CivmecBlue.svg",
+        "logo": "assets/sponsors/CivmecLogo.svg",
         "level": "gold"
     },
     {
         "name": "Partnets In Performance",
-        "logo": "assets/sponsors/PIPBlue.svg",
+        "logo": "assets/sponsors/PIPLogo.svg",
         "level": "silver"
     },
     {
         "name": "Partum",
-        "logo": "assets/sponsors/PartumBlue.svg",
+        "logo": "assets/sponsors/PartumLogo.svg",
         "level": "gold"
     },
     {
         "name": "SLB",
-        "logo": "assets/sponsors/SLBBlue.svg",
+        "logo": "assets/sponsors/SLBLogo.svg",
         "level": "silver"
     },
     {
         "name": "Optiver",
-        "logo": "assets/sponsors/OptiverBlue.svg",
+        "logo": "assets/sponsors/OptiverLogo.svg",
         "level": "other"
     },
     {
         "name": "PROK",
-        "logo": "assets/sponsors/ProkBlue.svg",
+        "logo": "assets/sponsors/ProkLogo.svg",
         "level": "other"
     },
     {
         "name": "Aecom",
-        "logo": "assets/sponsors/AecomBlue.svg",
+        "logo": "assets/sponsors/AecomLogo.svg",
         "level": "silver"
     },
     {
         "name": "EA",
-        "logo": "assets/sponsors/EABlue.svg",
+        "logo": "assets/sponsors/EALogo.svg",
         "level": "other"
     },
     {
         "name": "Tronnox",
-        "logo": "assets/sponsors/TronnoxBlue.svg",
+        "logo": "assets/sponsors/TronnoxLogo.svg",
         "level": "other"
     },
     {
         "name": "SilverWolf",
-        "logo": "assets/sponsors/SilverWolfBlue.svg",
+        "logo": "assets/sponsors/SilverWolfLogo.svg",
         "level": "gold"
     }
 ]
