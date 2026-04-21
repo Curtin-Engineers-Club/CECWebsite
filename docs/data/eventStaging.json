@@ -6,28 +6,18 @@
         "day": "1st of May",
         "time": "2pm-6pm",
         "description": "Fill",
-        "image": "assets/images/BOTL1_2026.png",
+        "image": "assets/images/BOTL2_2026.png",
         "link": "https://cec.cguild.club/public/schedule/events/82136-bbq-on-the-lawn-2",
         "date": "2026-05-01"
     },
     
     {
-        "title": "Engineer Your Career",
-        "day": "6th of May",
-        "time": "12pm-2pm",
-        "description": "Fill",
-        "image": "assets/images/BOTL1_2026.png",
-        "link": "https://cec.cguild.club/public/schedule/events/82136-bbq-on-the-lawn-2",
-        "date": "2026-05-06"
-    },
-    
-    {
-        "title": "Enternal Dusk - Ignite Ball",
-        "day": "8th of August",
+        "title": "Villans Pubcrawl",
+        "day": "15th of May",
         "time": "6pm-Midnight",
         "description": "Fill",
         "image": "assets/images/IgniteBall_2025.png",
         "link": "_",
-        "date": "2026-08-08"
+        "date": "2026-05-015"
     }
 ]
