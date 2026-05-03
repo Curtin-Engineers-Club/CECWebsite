@@ -1,13 +1,4 @@
 [
-    {
-        "title": "BBQ on the Lawn 2 - (BOTL)",
-        "day": "1st of May",
-        "time": "2pm-6pm",
-        "description": "Who says BOTL needs sunshine? Embrace The weather, destress from assignments, take a break from studying and grab a snag. Join us for BBQ on the Lawn (BOTL 2) in front of the Engineering Pavillion (215). A chance to meet people, have a drink and chill out before the end of semester grind starts.",
-        "image": "assets/images/BOTL2_2026.png",
-        "link": "https://cec.cguild.club/public/schedule/events/82136-bbq-on-the-lawn-2",
-        "date": "2026-05-01"
-    },
 
     {
         "title": "Engineer Your Career",
@@ -18,7 +9,7 @@
         "link": "https://cec.cguild.club/public/schedule/events/83454-engineer-your-career",
         "date": "2026-05-04"
     },
-    
+
     {
         "title": "Villains Pubcrawl",
         "day": "15th of May",
@@ -26,7 +17,7 @@
         "description": "Semester one pubcrawl is back again, this year with the theme of fictional villains. Dress up, drink, and party along on a bus with 5 stops around Perth, departing from varsity and landing in the city for the end of the night.<br><br>Tickets will sell fast!",
         "image": "assets/images/PubcrawlVillians_2026.png",
         "link": "https://curtin-cec.tidyhq.com/public/schedule/events/82142-pub-crawl-villains",
-        "date": "2026-05-015"
+        "date": "2026-05-15"
     },
 
     {
@@ -37,6 +28,16 @@
         "image": "assets/images/IgniteBall_2026.png",
         "link": "https://www.facebook.com/events/1684935672848809/",
         "date": "2026-08-08"
+    },
+
+    {
+        "title": "BBQ on the Lawn 2 - (BOTL)",
+        "day": "1st of May",
+        "time": "2pm-6pm",
+        "description": "Who says BOTL needs sunshine? Embrace The weather, destress from assignments, take a break from studying and grab a snag. Join us for BBQ on the Lawn (BOTL 2) in front of the Engineering Pavillion (215). A chance to meet people, have a drink and chill out before the end of semester grind starts.",
+        "image": "assets/images/BOTL2_2026.png",
+        "link": "https://cec.cguild.club/public/schedule/events/82136-bbq-on-the-lawn-2",
+        "date": "2026-05-01"
     },
 
     {
