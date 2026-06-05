@@ -112,7 +112,15 @@ function fetchOpportunities(containerID){
     .then(res => res.json())
     .then(opportunities => {
         if(!Array.isArray(opportunities) || opportunities.length === 0){ // If opportunity data empty, show supplementary message
-            container.innerHTML += `<p class="txSubtitle txMobile">No work opportunities at the moment!</p>`;
+            container.innerHTML += `
+            <div class="e404Hero">
+                <div class="heroGroup.center">
+                    <img src="assets/images/LegomanCoffeeWOutlineLarge.png" alt="Lego Man Coffee White Outline" style="width: 300px; height: auto;">
+                </div>
+                <div class="footerGroup">
+                    <p class="txSubtitle txMobile">No work opportunities at the moment!</p>
+                </div>
+            </div>`;
             console.log("No work opportunities");
         }
         // Attempt at showing "No Opportunities" message when JSON file is filled without of date opportunities
