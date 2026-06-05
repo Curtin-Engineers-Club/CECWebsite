@@ -9,7 +9,7 @@
     },
     {
         "question": "Do I need to be a Curtin student to join the club?",
-        "answer": "No, non-Curtin students become Associate Members of the club, rather than Ordinary Members. Don't Worry though you still get all the same benefits!"
+        "answer": "No, non-Curtin students can become Associate Members of the club, rather than Ordinary Members. Don't Worry though you still get all the same benefits!"
     },
     {
         "question": "What sort of events does the Curtin Engineers Club run?",
@@ -21,7 +21,7 @@
     },
     {
         "question": "How do I use Guild Vouchers to join the club?",
-        "answer": "Be sure to fill out the voucher with your student number and our club name 'Curtin Engineers Club'. Then bring the voucher to us and we will sign you up!"
+        "answer": "Be sure to fill out the voucher with your student number and our club name 'Curtin Engineers Club'. Then bring the voucher to us at 215.106 and we will sign you up!"
     },
     {
         "question": "When and where are the general meetings?",
@@ -29,11 +29,11 @@
     },
     {
         "question": "How do I get member discounts when buying tickets via TidyHQ?",
-        "answer": "When buying event tickets on TidyHQ members receive a discount, this can be applied by logging into your account with the email you used to sign-up for the club. Additionally discount codes are emailed to members if you buy tickets anonymously."
+        "answer": "When buying event tickets on TidyHQ members receive a discount, this can be applied by logging into your account with the email you used to sign-up for the club. Alternatively discount codes are at times emailed to members so you can use any email."
     },
     {
         "question": "How do I know when events are happening?",
-        "answer": "Events are advertised on our social media, links at the bottom of the page . Additionally posters of events are put up around campus and the Engineering Pavilion."
+        "answer": "Events are advertised on the website and our social media, links at the bottom of the page! Additionally posters of events are put up around campus and the Engineering Pavilion."
     },
     {
         "question": "What can I do to be more involved in the club?",
@@ -41,6 +41,6 @@
     },
     {
         "question": "Where do I go if I am having issues with my units, lecturers or course?",
-        "answer": "Contact student assist adn they will send you in the right direction. Additionally contact the student Sci Eng representative at sci.eng@guild.curtin.edu.au."
+        "answer": "Contact Curtin Student Assist and they will send you in the right direction. Additionally contact the student Sci Eng representative at sci.eng@guild.curtin.edu.au."
     }
 ]
