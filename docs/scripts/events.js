@@ -15,17 +15,17 @@ function updatePagination() {
         let pages = Math.ceil(events.length / 10);
         let currentPage = parseInt(hash) || 1;
 
-        if (hash === 1){ // Page 1 (no Prev button)
+        if (currentPage === 1){ // Page 1 (no Prev button)
             prev.style.visibility = "hidden";
             next.style.visibility = "visible";
             next.href = "#2"; // could change this to currentPage + 1 but there will always be a page 2
         }
-        if (hash ===  pages){ // Final Page (no Next button)
+        if (currentPage ===  pages){ // Final Page (no Next button)
             next.style.visibility = "hidden";
             prev.style.visibility = "visible";
             prev.href = "#" + (currentPage - 1);
         }
-        if (hash > 1 && hash < pages){ // Page n+1 - n-1 (both Prev and Next)
+        if (currentPage > 1 && currentPage < pages){ // Page n+1 - n-1 (both Prev and Next)
             prev.style.visibility = "visible";
             next.style.visibility = "visible";
 
@@ -122,7 +122,7 @@ function fetchEvents(category) {
             return events.filter(event => event.date < currentDate); // Return only past events 
         }
         else if (category === "upcoming"){
-            return events.filter(event => event.date >= currentDate); // Return only upcoming events
+            return events.filter(event => event.date >= currentDate).toReversed(); // Return only upcoming events
         }
         return events;
     });
