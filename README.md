@@ -37,7 +37,5 @@ The website aims to be a digital platform of information about the club that mem
   * Base on Committee Discretion
 * Error Page 
 
-This is a test
-
 # Usage
 This repository has been created to ensure safe development progress, traceable coding and ensures the project can continue after I (Rhett B) have left the club. Designs and code are owned Rhett Bauchop and are licensed to be altered and updated by those with permission in the Curtin Engineers Club Github Organisation.
