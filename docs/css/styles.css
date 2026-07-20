@@ -170,7 +170,7 @@ a {
 }
 
 .blueButton:hover {
-    background-color: var(--Brand-blue-primary); /* Brand Yellow Secondary*/
+    background-color: var(--Brand-blue-tertiary); /* Brand Yellow Secondary*/
     color: var(--Text-White); /* Text Primary */
 }
 
