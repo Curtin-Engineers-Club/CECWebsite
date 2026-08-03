@@ -1,0 +1,13 @@
+[
+    {"staging": "staging data"},
+
+    {
+        "company": "Company Name",
+        "role": "Internship or Graduate Role",
+        "title": "2027 Graduate Program",
+        "description": "Just steal the first 2-3 sentences from the grad program description",
+        "link": "Link_to_applications",
+        "deadline": "YYYY-MM-DD",
+        "image": "assets/images/<company><Grad/Intern>_<year>.png"
+    }
+]
