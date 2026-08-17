@@ -1,5 +1,15 @@
 [
     {
+        "title": "Ready Steady Build ",
+        "day": "2nd of September",
+        "time": "5pm-9pm",
+        "description": "CEC x CRoC are teaming up for the ultimate Monopoly-inspired engineering showdown — where quiz night meets hackathon chaos. Gather your crew, roll the dice, and race against the clock to design and build a car capable of conquering a challenging obstacle course",
+        "image": "assets/images/RSB_2026.jpg",
+        "link": "https://cec.cguild.club/public/schedule/events/84448-ready-steady-build",
+        "date": "2026-09-02"
+    },
+
+    {
         "title": "Partners in Performance Workshop",
         "day": "26th of August",
         "time": "6pm-8pm",
@@ -30,6 +40,16 @@
     },
 
     {
+        "title": "An Eternal Dusk Ignite Ball",
+        "day": "8th of August",
+        "time": "6:00pm-midnight",
+        "description": "You have been cordially invited, to the annual Curtin Engineers Club Ignite Ball. Find solace away from the hauntings of everyday life and join us in a a moon-lit evening of elegance and fun.<br>Adorn your Sunday-best with a black tie dress code in which we encourage you to add your own gothic twist.<br>Tickets are limited and will sell quick!",
+        "image": "assets/images/IgniteBall_2026.png",
+        "link": "https://www.facebook.com/events/1684935672848809/",
+        "date": "2026-08-08"
+    },
+
+    {
         "title": "O-Day Semester 2",
         "day": "22nd of July",
         "time": "11am-2:30pm",
@@ -57,16 +77,6 @@
         "image": "assets/images/EYC_2026.png",
         "link": "https://cec.cguild.club/public/schedule/events/83454-engineer-your-career",
         "date": "2026-05-04"
-    },
-
-    {
-        "title": "An Eternal Dusk Ignite Ball",
-        "day": "8th of August",
-        "time": "6:00pm-midnight",
-        "description": "You have been cordially invited, to the annual Curtin Engineers Club Ignite Ball. Find solace away from the hauntings of everyday life and join us in a a moon-lit evening of elegance and fun.<br>Adorn your Sunday-best with a black tie dress code in which we encourage you to add your own gothic twist.<br>Tickets are limited and will sell quick!",
-        "image": "assets/images/IgniteBall_2026.png",
-        "link": "https://www.facebook.com/events/1684935672848809/",
-        "date": "2026-08-08"
     },
 
     {
