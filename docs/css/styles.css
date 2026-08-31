@@ -1240,13 +1240,13 @@ a {
 
 .linkGrid > :nth-child(1){grid-column: 1 / span 1;} /* Meeting Minutes */
 .linkGrid > :nth-child(2){grid-column: 2 / span 2;} /* Sem Calendar */
-.linkGrid > :nth-child(3){grid-column: 4 /span 4;} /* Locker Hire */
+.linkGrid > :nth-child(3){grid-column: 4 /span 4;} /* Shirt Comp */
 
-.linkGrid > :nth-child(4){grid-column: 1 / span 1;} /* Club Governance */
-.linkGrid > :nth-child(5){grid-column: 2 / span 2;} /* Ball Photos */
+.linkGrid > :nth-child(4){grid-column: 1 / span 1;} /* Locker Hire */
+.linkGrid > :nth-child(5){grid-column: 2 / span 1;} /* Club Governance */
 
-.linkGrid > :nth-child(6){grid-column: 4 / span 4;} /* Blank 1 */
-.linkGrid > :nth-child(7){grid-column: 2 / span 2;} /* Blank 2 */
+.linkGrid > :nth-child(6){grid-column: 3 / span 1;} /* Booth Photos */
+.linkGrid > :nth-child(7){grid-column: 4 / span 4;} /* Photographer */
 .linkGrid > :nth-child(8){grid-column: 4 / span 4;} /* Blank 3 */
 
 .linkItem{
