@@ -1,5 +1,25 @@
 [
     {
+        "title": "2026 CEC Annual General Meeting",
+        "day": "16th of September",
+        "time": "5pm-8pm",
+        "description": "It's our time to hear how the club has gone this year and elect a new committee! Let's find out how much we lost on the Ball, how many members we gained and how many beers were drunk!",
+        "image": "assets/images/AGM_2026.png",
+        "link": "https://www.instagram.com/curtinengineersclub/",
+        "date": "2026-09-16"
+    },
+
+    {
+        "title": "Renfaire Pubcrawl",
+        "day": "11th of September",
+        "time": "6pm-12am",
+        "description": "Come forth ticket wielding adventurers to explore the far lands across the finest medley of venues, on a dedicated carriage fit with a bard to serenade and a dancing court.<br><br> Bus Leaves 7pm sharp!",
+        "image": "assets/images/PubcrawlRenFaire_2026.jpg",
+        "link": "https://www.instagram.com/p/DcfzoiNE5tM/?img_index=1",
+        "date": "2026-09-11"
+    },
+
+    {
         "title": "Ready Steady Build ",
         "day": "2nd of September",
         "time": "5pm-9pm",
