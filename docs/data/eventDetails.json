@@ -1,5 +1,25 @@
 [
     {
+        "title": "BBQ On The Lawn 4 - (BOTL)",
+        "day": "9th of October",
+        "time": "2pm-6pm",
+        "description": "Our last event of the year, BOTL 4 has open doors for everyone regardless of membership! Come down have a drink and relax in the sun. We have beer, wine, side, RTDs and softies for all. Grab a snag and rest up ",
+        "image": "assets/images/BOTL4_2026.png",
+        "link": "https://www.instagram.com/curtinengineersclub/",
+        "date": "2026-10-09"
+    },
+    
+    {
+        "title": "PROK Site Tour",
+        "day": "30th of September",
+        "time": "10am-12pm",
+        "description": "Join us for an exciting behind-the-scenes tour of PROK’s Bayswater facility! Students will have the opportunity to explore the world of mechanical design, manufacturing and engineering while learning more about company operations and the industry. <br><strong> Check TidyHQ for PPE Requirements!</strong>",
+        "image": "assets/images/PROKSiteTour_2026.png",
+        "link": "https://www.instagram.com/p/DdsXX_vlHyx/",
+        "date": "2026-09-30"
+    },
+    
+    {
         "title": "2026 CEC Annual General Meeting",
         "day": "16th of September",
         "time": "5pm-8pm",
